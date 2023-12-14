@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #fff;
   margin: 0;
   padding: 0;
 }
@@ -25,27 +25,30 @@ img.rounded {
   width: 100%;
 }
 
-.overlay {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999;
-  top: 0;
-  left: 0;
+.headshot {
+  width: auto;
+  height: 200px;
 }
 
-.center {
-  display: block;
-  margin: auto;
-  max-width: 150px;
-  min-width: 150px;
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 div.container {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+div.evencontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
 }
 
 div.row {
@@ -71,24 +74,12 @@ div.row {
 div.cell {
   display: flex;
   justify-content: space-evenly;
-  text-align: center;
+  text-align: left;
   padding: 10px;
 }
 
-div.backgroundandborder {
-  background-color: #fafafa;
-  border: 2px solid black;
-  border-radius: 25px;
-}
-
-h1 {
-  color: black;
-  text-align: left;
-}
-
-p {
-  color: black;
-  text-align: left;
+.borderbottom {
+  border-bottom: 1px solid black;
 }
 
 button {
@@ -99,6 +90,7 @@ button {
   background-color: transparent;
   border-style: solid;
   border-color: black;
+  border-width: 1.5px;
 }
 
 button:hover {
@@ -124,4 +116,13 @@ a:hover {
 
 a:active {
   text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+p.indent {
+  text-indent: 30px;
 }
