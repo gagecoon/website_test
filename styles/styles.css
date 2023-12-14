@@ -18,27 +18,36 @@ img.rounded {
 }
 
 img.background {
+  display: inline;
   opacity: 0.7;
   object-fit: cover;
-  height: 300px;
+  height: 150px;
+  min-width: 1920px;
+  overflow: hidden;
 }
 
 .overlay {
+  display: flex;
   position: absolute;
   overflow: hidden;
 }
 
-img.center {
+.center {
   display: block;
   margin: auto;
-  max-width: 30%;
-  min-width: 30%;
+  max-width: 150px;
+  min-width: 150px;
 }
 
 div.container {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+div.containercol {
+  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -48,13 +57,31 @@ div.row {
   justify-content: space-evenly;
 }
 
+.left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
 div.cell {
   display: flex;
   justify-content: space-evenly;
-  text-align: right;
-  padding: 16px;
+  text-align: center;
+  padding: 10px;
+}
+
+div.backgroundandborder {
   background-color: #fafafa;
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 25px;
 }
 
@@ -66,8 +93,10 @@ div.cell:hover {
 
 h1 {
   color: black;
+  text-align: left;
 }
 
 p {
   color: black;
+  text-align: left;
 }
