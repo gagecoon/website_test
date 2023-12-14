@@ -1,6 +1,5 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
-  border: 1px black;
 }
 
 @media screen and (min-width:950px) {
@@ -11,25 +10,28 @@
 
 body {
   background-color: #fafafa;
+  margin: 0;
+  padding: 0;
 }
 
 img.rounded {
   border-radius: 50%;
 }
 
-img.background {
-  display: inline;
-  opacity: 0.7;
-  object-fit: cover;
-  height: 150px;
-  min-width: 1920px;
-  overflow: hidden;
+.background {
+  display: flex;
+  background-color: rgb(80, 150, 80);
+  background-size: cover;
+  width: 100%;
 }
 
 .overlay {
-  display: flex;
-  position: absolute;
-  overflow: hidden;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  top: 0;
+  left: 0;
 }
 
 .center {
@@ -43,18 +45,12 @@ div.container {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-div.containercol {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
 }
 
 div.row {
   width: auto;
   display: flex;
-  justify-content: space-evenly;
 }
 
 .left {
@@ -85,12 +81,6 @@ div.backgroundandborder {
   border-radius: 25px;
 }
 
-div.cell:hover {
-  display: flex;
-  background-color: #ddd;
-  color: black;
-}
-
 h1 {
   color: black;
   text-align: left;
@@ -99,4 +89,39 @@ h1 {
 p {
   color: black;
   text-align: left;
+}
+
+button {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: black;
+}
+
+button:hover {
+  display: flex;
+  background-color: #dddddd77;
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+
+a:visited {
+  text-decoration: none;
+}
+
+
+a:hover {
+  text-decoration: none;
+}
+
+
+a:active {
+  text-decoration: none;
 }
