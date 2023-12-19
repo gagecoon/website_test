@@ -78,6 +78,10 @@ div.cell {
   padding: 10px;
 }
 
+.wide {
+  width: 100%;
+}
+
 .borderbottom {
   border-bottom: 1px solid black;
 }
