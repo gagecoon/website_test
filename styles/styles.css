@@ -51,6 +51,13 @@ div.evencontainer {
   flex-flow: row wrap;
 }
 
+div.evencentercontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
 div.row {
   width: auto;
   display: flex;
@@ -76,6 +83,14 @@ div.cell {
   justify-content: space-evenly;
   text-align: left;
   padding: 10px;
+}
+
+div.cellnomargin {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
 }
 
 .wide {
@@ -133,6 +148,6 @@ p.indent {
 }
 
 .collage {
-  width: 400px;
-  height: auto;
+  width: auto;
+  height: 400px;
 }
