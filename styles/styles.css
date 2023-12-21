@@ -20,7 +20,7 @@ img.rounded {
 
 .background {
   display: flex;
-  background-color: rgb(80, 150, 80);
+  background-color: #228855;
   background-size: cover;
   width: 100%;
 }
@@ -67,8 +67,8 @@ div.row {
 }
 
 .icon {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 
 div.cell {
@@ -87,14 +87,15 @@ div.cell {
 }
 
 button {
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: lighter;
+  font-size: 18px;
   margin: 10px;
-  padding: 5px;
+  padding: 5px 20px;
   background-color: transparent;
+  color: #ffffff;
   border-style: solid;
-  border-color: black;
-  border-width: 1.5px;
+  border-color: #ffffff;
+  border-width: 1px;
 }
 
 button:hover {
