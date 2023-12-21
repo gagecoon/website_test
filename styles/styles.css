@@ -131,3 +131,8 @@ h1 {
 p.indent {
   text-indent: 30px;
 }
+
+.collage {
+  width: 400px;
+  height: auto;
+}
