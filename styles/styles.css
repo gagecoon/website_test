@@ -12,6 +12,7 @@ body {
   background-color: #fff;
   margin: 0;
   padding: 0;
+  margin-top: 54px;
 }
 
 img.rounded {
@@ -62,6 +63,11 @@ div.row {
   width: auto;
   display: flex;
 }
+div.row {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
 
 .left {
   display: flex;
@@ -85,6 +91,14 @@ div.cell {
   padding: 10px;
 }
 
+div.cellcenter {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+
 div.cellnomargin {
   display: flex;
   justify-content: space-evenly;
@@ -98,7 +112,11 @@ div.cellnomargin {
 }
 
 .borderbottom {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ffffff;
+}
+
+.bordertop {
+  border-top: 1px solid #ffffff;
 }
 
 button {
@@ -120,21 +138,25 @@ button:hover {
 }
 
 a:link {
+  color: black;
   text-decoration: none;
 }
 
 
 a:visited {
+  color: black;
   text-decoration: none;
 }
 
 
 a:hover {
+  color: black;
   text-decoration: none;
 }
 
 
 a:active {
+  color: black;
   text-decoration: none;
 }
 
@@ -150,4 +172,18 @@ p.indent {
 .collage {
   width: auto;
   height: 400px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+h4 {
+  font-weight: lighter;
+  font-size: 14px;
+  margin: 10px;
+  padding: 5px 20px;
+  color: #ffffff;
 }
